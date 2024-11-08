@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0 10px 20px;
+    background: #FFF;
+    top: 0;
+}
+
+.header-icon {
+    height: 40px;
+    width: auto;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-nav--item {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+}
+
+.date-button{
+    width: 35px;
+    color: rgb(36, 123, 177);
+    border: solid 1px rgb(36, 123, 177);
+    background: #FFF;
+}
+
+.data-text--blank{
+    margin: 0 30px;
+}
+
+.list{
+    margin: 20px;
+}
+
+.list-title,
+.list-time{
+    padding: 15px 150px 15px 20px;
+    border-top: solid 1px #b8b8b8;
+}
+
+.pagination{
+    margin: 40px;
+}
+
+.pagination-button--before,
+.pagination-button,
+.pagination-button--after{
+    height: 40px;
+    width: 40px;
+    color: rgb(36, 123, 177);
+    border: none;
+    background: #FFF;
+}
+
+.pagination-button--before{
+    color: rgb(203, 203, 203);
+}
+
+#page1{
+    color: rgb(255, 255, 255);
+    background: rgb(36, 123, 177);
+}

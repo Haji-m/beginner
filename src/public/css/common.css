@@ -1,0 +1,20 @@
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.content-cover {
+    height: 600px;
+    width: auto;
+    background: #ededed;
+    padding-top: 40px;
+}
+
+.content__footer {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
