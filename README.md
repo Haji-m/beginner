@@ -1,5 +1,4 @@
-#
-使用バージョン
+# 使用バージョン
 使用バージョン
 *****Laravel : ver8.83.27
 *Laravel fortify : ver1.19
