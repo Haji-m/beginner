@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AtteController;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\AuthenticatedSessionController;
+use App\Http\Controllers\MiddlewareController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,14 @@ Route::post('register', [RegisteredUserController::class, 'register']);
 Route::get('/login', [AuthenticatedSessionController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'login']);
 
+// ログイン済みの場合のみ画面を表示。
+Route::middleware('auth')->group(function () {
+    Route::get('/stamp', [AtteController::class, 'showStampPage']);
+});
+
+//middlewareの設定。
+// Route::get('/middleware', [AtteController::class, 'index']);
+// +Route::post('/middleware', [AtteController::class, 'post'])->middleware('atte');
 
 // ボタンを押すとindex.blade.phpを表示させる。
 Route::get('/index', function () {

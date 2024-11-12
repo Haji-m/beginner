@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class AtteController extends Controller
 {
@@ -10,13 +11,15 @@ class AtteController extends Controller
         return view('index');
     }
 
-    public function stamp()
+    public function showStamp()
     {
         return view('stamp');
     }
 
     public function attendance()
     {
+        // $authors = User::simplePaginate(5);
+        // return view('attendance', ['authors' => $authors]);
         return view('attendance');
     }
 }
