@@ -20,19 +20,5 @@ class UsersTableSeeder extends Seeder
             'password' => 'password1',
         ];
         DB::table('users')->insert($param);
-
-        $param = [
-            'name' => '大西鬼右衛門',
-            'email' => '2345678@gmail.com',
-            'password' => 'password2',
-        ];
-        DB::table('users')->insert($param);
-
-        $param = [
-            'name' => '小西散右衛門',
-            'email' => '3456789@gmail.com',
-            'password' => 'password3',
-        ];
-        DB::table('users')->insert($param);
     }
 }

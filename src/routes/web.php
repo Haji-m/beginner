@@ -34,7 +34,7 @@ Route::post('/login', [AuthenticatedSessionController::class, 'login']);
 
 // ログイン済みの場合のみ画面を表示。
 Route::middleware('auth')->group(function () {
-    Route::get('/stamp', [AtteController::class, 'showStampPage']);
+    Route::get('/stamp', [AtteController::class, 'showStamp']);
 });
 
 //middlewareの設定。

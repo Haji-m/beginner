@@ -17,7 +17,7 @@
 <!-- 以下、内容。 -->
 @section('content')
 <h3 class="content-title">ログイン</h3>
-<form action="{{ route('login') }}" method="post"><!-- フォーム内容の取得。 -->
+<form action="{{ route('stamp') }}" method="post"><!-- フォーム内容の取得。 -->
     @csrf
     <div class="content"><!-- メールアドレスの入力フォーム。 -->
         <input class="content-list" type="email" name="email" placeholder="メールアドレス" value="{{ old('email') }}" />
